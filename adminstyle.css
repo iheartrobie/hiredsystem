@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #d1cfcf;
+    overflow: hidden;
+}   
+
+.vert-nav {
+    padding-top: 50px;
+    height: 100vh;
+    width: 20%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,88,1) 30%, rgba(0,36,44,1) 47%, rgba(0,117,143,1) 100%);
+    color: white;
+    border-right: 3px solid black;
+    overflow-y: auto; /*Customize Slidebar Later*/
+}
+
+.vert-nav a {
+    padding: 10px;
+    display: block;
+    height: 65px;
+    font-size: 1.3rem;
+    filter: brightness(80%);
+    color: white;
+    transition: font-size .5s;
+}
+
+.vert-nav a:not(.logout):hover {
+    filter: brightness(100%);
+    font-size: 1.5rem;
+}
+
+.vert-nav a img {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.logout:hover{
+    color: red;
+}
+
+.admin-container {
+    display: flex;
+}
+
+.horz-nav {
+    display: flex;
+    height: 65px;
+    width: 152vh;
+    background-color: white;
+    padding: 2px 10px 2px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.horz-nav h2 {
+    line-height: 60px;
+    padding-left: 25px;
+}
+
+.horz-nav .adminprofile {
+    position: absolute;
+    right: 2%;
+}
+
+.horz-nav img {
+    height: 60px;
+    width: 60px;
+    vertical-align: center;
+}
+
